@@ -12,7 +12,7 @@
     "navigationBarTextStyle":"white"
   } ,"tabBar": {
     "position": "bottom",
-    "color": "#000000",
+    "color": "#999999",
     "selectedColor": "#00b7ff",
     "list": [ {
       "pagePath": "pages/menu/menu",
