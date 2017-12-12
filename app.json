@@ -1,20 +1,36 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/order/index",
+    "pages/logs/logs",
+    "pages/personal/personal",
+    "pages/menu/menu"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#00b7ff",
+    "navigationBarTitleText": "微信点餐",
+    "navigationBarTextStyle":"white"
   } ,"tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "点餐"
-    }, {
-      "pagePath": "pages/logs/logs",
-      "text": "我的"
+    "position": "bottom",
+    "color": "#000000",
+    "selectedColor": "#00b7ff",
+    "list": [ {
+      "pagePath": "pages/menu/menu",
+      "text": "点餐",
+      "iconPath":"images/icon_menu.png",
+      "selectedIconPath": "images/icon_menu_selected.png"
+    },
+    {
+      "pagePath": "pages/order/index",
+      "text": "订单",
+      "iconPath":"images/icon_order.png",
+      "selectedIconPath": "images/icon_order_selected.png"
+    },
+    {
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "iconPath":"images/icon_my.png",
+      "selectedIconPath": "images/icon_my_selected.png"
     }]
   }
 }
