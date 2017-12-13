@@ -1,7 +1,11 @@
 var helloData = {
   name: 'WeChat',
-  age:12
+  pass:12
 }
+var common = require("../../common/common.js");
+
+//获取应用实例
+var app = getApp();
 
 // Register a Page.
 Page({
@@ -9,7 +13,16 @@ Page({
   changeName: function(e) {
     // sent data change to view
     this.setData({
-      name: 'MINA'
+      name: 'MINA',
+      pass:app.globalData.pass
     })
+  },
+
+  say:function(){
+    common.sayHello(this.data.name);
+  },
+  
+  onShwo(){
+    console.log("")
   }
 })

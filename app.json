@@ -1,37 +1,41 @@
 {
-  "pages":[
+  "pages": [
     "pages/menu/menu",
     "pages/order/index",
     "pages/logs/logs",
-    "pages/personal/personal"
-    
+    "pages/personal/personal",
+    "pages/test/test"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#00b7ff",
     "navigationBarTitleText": "微信点餐",
-    "navigationBarTextStyle":"white"
-  } ,"tabBar": {
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
     "position": "bottom",
     "color": "#999999",
     "selectedColor": "#00b7ff",
-    "list": [ {
-      "pagePath": "pages/menu/menu",
-      "text": "点餐",
-      "iconPath":"images/icon_menu.png",
-      "selectedIconPath": "images/icon_menu_selected.png"
-    },
-    {
-      "pagePath": "pages/order/index",
-      "text": "订单",
-      "iconPath":"images/icon_order.png",
-      "selectedIconPath": "images/icon_order_selected.png"
-    },
-    {
-      "pagePath": "pages/personal/personal",
-      "text": "我的",
-      "iconPath":"images/icon_my.png",
-      "selectedIconPath": "images/icon_my_selected.png"
-    }]
-  }
+    "list": [
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "点餐",
+        "iconPath": "images/icon_menu.png",
+        "selectedIconPath": "images/icon_menu_selected.png"
+      },
+      {
+        "pagePath": "pages/order/index",
+        "text": "订单",
+        "iconPath": "images/icon_order.png",
+        "selectedIconPath": "images/icon_order_selected.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "images/icon_my.png",
+        "selectedIconPath": "images/icon_my_selected.png"
+      }
+    ]
+  },
+  "debug": false
 }

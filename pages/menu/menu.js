@@ -15,5 +15,11 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
+  },
+
+  toTest:function(){
+    wx.navigateTo({
+      url: '../test/test',
+    })
   }
 })

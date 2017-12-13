@@ -8,10 +8,18 @@ Page({
   },
   //事件处理函数
   bindViewTap: function() {
+    //页面跳转
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
+
+  changeMotto:function(){
+    this.setData({
+        motto:"你好 世界！"
+    });
+  },
+  //当页面加载好之后执行
   onLoad: function () {
     console.log('onLoad')
     var that = this

@@ -1,2 +1,3 @@
 <!--pages/menu/menu.wxml-->
 <text>pages/menu/menu.wxml</text>
+<button bindtap='toTest'>跳转测试页面</button>

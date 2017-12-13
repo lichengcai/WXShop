@@ -1,2 +1,3 @@
-<view> Hello {{name}} {{age}}! </view>
+<view>  {{name}} {{pass}}! </view>
 <button bindtap="changeName"> Click me! </button>
+<button bindtap="say">say Hello</button>

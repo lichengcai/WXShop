@@ -1,0 +1,57 @@
+<!--pages/test/test.wxml-->
+
+
+<!--定义一个模板  拥有独立作用域-->
+<!-- <template name="object">
+   <view>第一个对象：{{a}}</view>
+  <view>{{b}}</view> 
+  <view>{{name}}</view>
+</template> -->
+
+<!--使用模板  -->
+<!-- <template is="object" data="{{a:1,b:2,tempname:name}}"></template> -->
+ <!-- <template is="object" data="{{...obj1,tempname:name}}"></template>  -->
+<!-- <template is="object" data="{{name:'zhangsan'}}"></template> -->
+<!-- <template is="object" data="{{...obj1,b:11}}"></template> -->
+
+
+<!--for 详解  -->
+<!-- <view wx:for="{{arr}}">
+  下标是：{{index}}   当前项是：{{item}}
+</view>
+
+<view wx:for="{{arr}}" wx:for-index="ind" wx:for-item="itemName">
+  下标是：{{ind}}    当前项是：{{itemName}}
+</view> -->
+
+<!--行  -->
+ <!-- <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+
+  <view style="display:inline-block; width:50px" wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+    
+    <view wx:if="{{j <= i}}">
+      {{i}}*{{j}}={{i*j}}
+    </view>
+  </view>
+</view>  -->
+
+<!--事件  冒泡，阻止冒泡-->
+<!-- <view id='outter' bindtap='outterTap' style='border:1px solid red;'>
+  outter view
+  <view id='middle' bindtap='middleTap' style='border:1px solid green;'>middle view
+    <view id='inner view' data-src='一些路径' bindtap='innerTap'>inner view</view>
+  </view>
+</view> -->
+
+<!--引入 Import  -->
+<!-- <import src='item.wxml' />
+<import src='c.wxml' />
+<template is='item' data="{{name:'lichengcai'}}"/>
+<template is='c' data="{{pass:'12345'}}"/> -->
+
+
+<!--引入 include  -->
+<!-- <include src="item.wxml"/>
+<template is='item' data="{{name:'lichengcai'}}"/> -->
+
+<view class='rpx'></view>
