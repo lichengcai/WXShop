@@ -1,28 +1,38 @@
-var helloData = {
-  name: 'WeChat',
-  pass:12
-}
-var common = require("../../common/common.js");
-
 //获取应用实例
 var app = getApp();
 
 // Register a Page.
 Page({
-  data: helloData,
-  changeName: function(e) {
-    // sent data change to view
-    this.setData({
-      name: 'MINA',
-      pass:app.globalData.pass
-    })
+  data: {
+    userInfo: {},
+    location: ""
   },
 
-  say:function(){
-    common.sayHello(this.data.name);
-  },
-  
-  onShwo(){
-    console.log("")
+  onLoad() {
+    var that = this;
+    app.getUserInfo(function (userInfo) {
+
+      console.log("personal.js onLoad");
+      console.log(userInfo);
+      that.setData({
+        userInfo: userInfo,
+      })
+    }),
+
+      wx.request({
+        url: 'http://127.0.0.1:8085/sell/buyer/product/list', //仅为示例，并非真实的接口地址
+        data: {
+
+        },
+        header: {
+          'content-type': 'application/json' // 默认值
+        },
+        success: function (res) {
+          console.log(res.data)
+          that.setData({
+            location: res.data.msg
+          })
+        }
+      })
   }
 })

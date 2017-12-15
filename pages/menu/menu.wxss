@@ -1,1 +1,25 @@
 /* pages/menu/menu.wxss */
+
+.menu_top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 120rpx;
+  background-color: #00b7ff;
+  align-items: center;
+}
+
+.image_location {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 10rpx;
+}
+
+.text_location {
+  color: white;
+  margin-left: 5rpx;
+}
+
+.menu_list{
+
+}

@@ -1,3 +1,12 @@
-<!--pages/menu/menu.wxml-->
-<text>pages/menu/menu.wxml</text>
-<button bindtap='toTest'>跳转测试页面</button>
+<view class="menu_top" > 
+  <image class="image_location" src="../../images/icon_location.png"></image>
+  <text bindtap="toTest" class="text_location">{{address}}</text>
+
+  <scroll-view class="menu_list" scroll-y="true" bindscrolltolower="loadmore">
+    <navigator url='' wx:for="{{}}">
+    
+    
+    
+    </navigator>
+  </scroll-view>
+</view>

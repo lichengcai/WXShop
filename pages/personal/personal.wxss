@@ -1,1 +1,38 @@
-/* pages/personal/personal.wxss */
+
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  background-color: #00b7ff;
+  width: 100%;
+  height: 300rpx;
+  
+}
+
+.user_name_phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-left: 50rpx;
+  margin-top: 50rpx;
+  border-radius: 50%; 
+  border: 5rpx solid white;
+}
+
+.userinfo-nickname{
+  margin-left: 30rpx;
+  color: white; 
+  margin-top: 65rpx;
+  font-size: 35rpx;
+}
+
+.userinfo-phone{
+  margin-left: 30rpx;
+  color: white; 
+  margin-top: 2rpx;
+}
+
+

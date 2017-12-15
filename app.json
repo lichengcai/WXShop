@@ -1,15 +1,16 @@
 {
   "pages": [
     "pages/menu/menu",
-    "pages/order/index",
+    "pages/order/order",
     "pages/logs/logs",
     "pages/personal/personal",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/module/module"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#00b7ff",
-    "navigationBarTitleText": "微信点餐",
+    "navigationBarTitleText": "微信",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -24,7 +25,7 @@
         "selectedIconPath": "images/icon_menu_selected.png"
       },
       {
-        "pagePath": "pages/order/index",
+        "pagePath": "pages/order/order",
         "text": "订单",
         "iconPath": "images/icon_order.png",
         "selectedIconPath": "images/icon_order_selected.png"

@@ -1,3 +1,13 @@
-<view>  {{name}} {{pass}}! </view>
-<button bindtap="changeName"> Click me! </button>
-<button bindtap="say">say Hello</button>
+<!--index.wxml-->
+<view class="personal">
+  <view class="userInfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+
+    <view class="user_name_phone">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="userinfo-phone">{{location}}</text>
+    </view>
+
+  </view>
+
+</view>

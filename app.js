@@ -1,4 +1,5 @@
 //app.js
+
 App({
   //当程序初始化的时候执行onlaunch里面的内容
   onLaunch: function () {
@@ -6,6 +7,9 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+
+    
+    
   },
   //小程序显示出来的时候
   onShow:function(){
@@ -34,9 +38,11 @@ App({
       })
     }
   },
+
+  
   //全局的属性
   globalData:{
     userInfo:null,
-    pass:"1234567"
+    address:null,
   }
 })
